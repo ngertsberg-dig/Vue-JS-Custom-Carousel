@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang = "en-ca">
+<head>
+<meta charset = "UTF-8">
+<title> </title>
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<!-- BOOTSTRAP REFERENECE -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- <script src = "velocity.min.js"></script> -->
+<!-- <script src = "anime.min.js"></script>
+<link rel="stylesheet" href="font-awesome.min.css">
+<link rel="stylesheet" href="font-awesome.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel= "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/<l></l>ibs/velocity/1.5.1/velocity.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<!-- <script src="paroller.js"></script>
+<script src="paroller.min.js"></script> -->
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<link href = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel = "stylesheet">
+<link href = "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel = "stylesheet">
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<link href = "https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel = "stylesheet">
+<link href = "css/all-pages.css" rel = "stylesheet">
+<!-- Loading Script -->
+<script src = "loadingScript/loadingScript.js"></script>
+<link href = "loadingScript/loadingScript.css" rel = "stylesheet">
+<script src = "scripts/all-pages.js"></script>
+<script src = "scripts/vue-scripts.js"></script>
+<style>
+</style>
+</head>
+<body>
+  <div id="load">
+      <img src = "i/4reel.jpg" id = "logoLoadingIcon">
+      <img src = 'http://samherbert.net/svg-loaders/svg-loaders/puff.svg' id = "loadingIcon">
+  </div>
+
+
+
+  <div id = "VueCarousel">
+    <navbar></navbar>
+
+    <!-- MAIN SLIDER -->
+     <div class = "intro">
+       <div class = "previous intro-slide-buttons" @click = "previousSlide"><i class = "fa fa-chevron-left"></i></div>
+          <div class = "first-splice slide" :style = "{backgroundImage:background1Image}">
+                <slide-text title = "sup" subtitle = "subtitle text" id = "slide-text-1"></slide-text>
+          </div>
+          <div class = "second-splice slide" :style = "{backgroundImage:background2Image}">
+                <slide-text title = "header 2" subtitle = "subtitle text 2" id = "slide-text-2"></slide-text>
+          </div>
+          <div class = "third-splice slide" :style = "{backgroundImage:background3Image}">
+                  <slide-text title = "header 3" subtitle = "subtitle text 3" id = "slide-text-3"></slide-text>
+
+          </div>
+          <div class = "next intro-slide-buttons" @click = "nextSlide"><i class = "fa fa-chevron-right"></i></div>
+    </div>
+</div>
+
+<!-- THREE BOXES WITH ANIMATIONS -->
+<div class = "three-boxes-container col-NZ-12 second-row" id = "heightEqualizer">
+
+
+
+
+     <div class = 'box box-1 col-NZ-4 col-NZ-12-mobile'>
+             <div class = 'box-image'>
+                 <img src = 'i/svg/experience.svg'>
+             </div>
+             <div class = 'box-title'>
+               <h1>Heading 1</h1>
+             </div>
+             <div class = 'box-subtitle'>
+             <p style = "text-align:center;">subtitle for box 1</p>
+             </div>
+
+     </div>
+     <div class = 'box box-2 col-NZ-4 col-NZ-12-mobile'>
+             <div class = 'box-image' id = "drone">
+                 <img src = 'i/svg/drone.svg'>
+             </div>
+             <div class = 'box-title'>
+               <h1>Drone Shit</h1>
+             </div>
+             <div class = 'box-subtitle'>
+             <p style = "text-align:center;">i do shit with drones sometimes i fly them around and sometimes i land them and look at them.. they're real pretty</p>
+             </div>
+
+        </div>
+     <div class = 'box box-3 col-NZ-4 col-NZ-12-mobile'>
+             <div class = 'box-image'>
+                 <img src = 'i/svg/house.svg'>
+                 <img src = "i/svg/sun.svg" id = "sun">
+             </div>
+             <div class = 'box-title'>
+               <h1>Heading 1</h1>
+             </div>
+             <div class = 'box-subtitle'>
+             <p style = "text-align:center;">subtitle for box 1</p>
+             </div>
+
+     </div>
+</div>
+
+<!-- CONTACT / WHAT WE DO ROW -->
+<div class = "fourth-row col-NZ-12 contact-row" >
+  <div class = "box box-left col-NZ-8 col-NZ-12-mobile what-we-do">
+    <div class = "inner-content">
+    <div class = "header-image">
+      <img src = "i/clapperboard.png">
+    </div>
+    <div class = "inner-text ">
+      <h2> What We Do</h2>
+      <ul>
+        <li>This Shit</li>
+        <li>That Shit</li>
+        <li>Bit of this</li>
+        <li>Bit of that</li>
+      </ul>
+    </div>
+
+      </div>
+  </div>
+  <div class = "contact-button col-NZ-4 right-box col-NZ-12-mobile">
+    <button>Contact <i class="fa fa-mobile"></i></button>
+  </div>
+</div>
+
+    <!-- TESTIMONIAL  -->
+    <div class = "third-row col-NZ-12 testimonial-container">
+      <div class = "testimonial-carousel">
+          <div class = "testimonial-1 testimonial">
+            <div class = "testimonial-inner-content">
+            <div class = "testimonial-image">
+              <img src = "i/test.jpg">
+            </div>
+            <div class = "testimonial-inner-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3 class = "testimonial-person">Jeff Burbz</h3>
+            </div>
+          </div>
+          </div>
+          <div class = "testimonial-2 testimonial">
+            <div class = "testimonial-inner-content">
+            <div class = "testimonial-image">
+              <img src = "i/test.jpg">
+            </div>
+            <div class = "testimonial-inner-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <h3 class = "testimonial-person">Jeff Burbz</h3>
+            </div>
+          </div>
+
+      </div>
+
+    </div>
+</div>
+
+
+<!-- MAP -->
+
+<div class = "fifth-row col-NZ-12 contact">
+<div class = "map col-NZ-6 col-NZ-12-mobile">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.778539731023!2d-79.73247078457281!3d44.37613777910322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882abd5b1fbd26dd%3A0x299d8f7c327cfc3c!2s16+Mailey+Ln%2C+Barrie%2C+ON+L4N+0P3!5e0!3m2!1sen!2sca!4v1520606126686" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class = "contact-form col-NZ-6 col-NZ-12-mobile">
+
+
+<input type = "text" placeholder = "Name">
+<input type = "text" placeholder = "Email">
+<textarea placeholder ="Message">
+
+</textarea>
+<input type = "submit" value = "Contact Me">
+
+</div>
+</div>
+
+
+  <script>
+
+
+
+$(".testimonial-carousel").slick({
+  dots:true
+});
+</script>
+<script>
+var VueCarousel = new Vue({
+
+  data :{
+    thisCounter:0,
+    // IMAGES GO IN HERE
+    background1Images : ["i/slice/splice1.jpg","i/slice/splice1-2.jpg","i/slice/splice1-3.jpg"],
+    background2Images : ["i/slice/splice2.jpg","i/slice/splice2-2.jpg","i/slice/splice2-3.jpg"],
+    background3Images : ["i/slice/splice3.jpg","i/slice/splice3-2.jpg","i/slice/splice3-3.jpg"],
+    // INIT IMAGES
+    background1Image:'',
+    background2Image:'',
+    background3Image:''
+    },
+    // WATCH FOR COUNTER CHANGES AND UPDATE THE IMAGE
+    watch:{
+      thisCounter:function(){
+        this.background1Image = 'URL("' + this.background1Images[this.thisCounter] + '")'
+        this.background2Image = 'URL("' + this.background2Images[this.thisCounter] + '")'
+        this.background3Image = 'URL("' + this.background3Images[this.thisCounter] + '")'
+      }
+    },
+
+  methods:{
+    mobileCollapse:function(){
+      $(".collapse").slideToggle()
+
+    },
+
+    alertMethod:function(){
+      alert('alertMethod')
+    },
+
+  nextSlide:function(){
+    if(this.thisCounter == this.background1Images.length -1 ){
+      this.thisCounter = 0
+      animationSlideDown()
+    }
+
+    else{
+      animationSlideDown()
+      this.thisCounter = this.thisCounter + 1
+    }
+
+
+  },
+  previousSlide:function(){
+    if(this.thisCounter <= 0){
+      this.thisCounter = this.background1Images.length -1
+      animationSlideDown()
+    }
+
+    else{
+      this.thisCounter = this.thisCounter - 1
+      animationSlideDown()
+      }
+  },
+  initImages:function(){
+
+  this.background1Image = 'URL("' + this.background1Images[this.thisCounter] + '")'
+  this.background2Image = 'URL("' + this.background2Images[this.thisCounter] + '")'
+  this.background3Image = 'URL("' + this.background3Images[this.thisCounter] + '")'
+    }
+  },
+  beforeMount(){
+    this.initImages()
+
+
+  }
+})
+VueCarousel.$mount("#VueCarousel");
+
+</script>
+<script>
+//ERROR HANDLING
+//start animation AFTER page load
+setTimeout(animationSlideDown,1200);
+//disable next/previous buttons on slider while animating
+
+$(".next,.previous").click(function(){
+
+$(".next,.previous").css({"display":"none"});
+function showAgain(){
+$(".next,.previous").fadeIn();
+};
+setTimeout(showAgain,1200);
+});
+
+$(".next,.previous").css({"display":"none"});
+function showAgain(){
+$(".next,.previous").fadeIn();
+};
+setTimeout(showAgain,3000);
+
+
+//not working in the all-pages.js ... animations for the three boxes..
+$(".box-2").hover(function(){
+  droneAnimation();
+})
+$(".box-3").mouseover(function(){
+TweenMax.to($("#sun"),1,{opacity:1,y:-20})
+});
+$(".box-3").mouseout(function(){
+TweenMax.to($("#sun"),1,{opacity:0,y:0})
+});
+
+fiftyFifty('.contact-row .right-box','.contact-row .box-left');
+
+</script>
+
+</body>
+</html>

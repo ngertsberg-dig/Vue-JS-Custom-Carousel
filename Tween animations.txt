@@ -1,0 +1,14 @@
+var t1 = new TimelineLite({repeat:-1,onComplete:reverseMethod});
+t1.from($('svg'),1,{x:-200,y:-50,rotation:90});
+t1.to($('svg'),1,{x:200,y:-50,rotation:-90});
+
+function reverseMethod(){
+t1.reverse();
+}
+
+var t1 = new TimelineLite({repeat:-1});
+t1.from($('svg'),1,{y:50});
+t1.to($('svg'),2.5,{x:-100,rotation:20});
+t1.to($('svg'),1,{x:-100,rotation:360});
+t1.to($('svg'),2.5,{x:100,rotation:380});
+t1.to($('svg'),1,{x:0,rotation:-0});
